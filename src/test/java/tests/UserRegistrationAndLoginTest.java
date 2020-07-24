@@ -13,12 +13,11 @@ public class UserRegistrationAndLoginTest extends TestBase {
 	String lastName= "Test11";
 	String userMail= "anaagamy1333@yahoo.com";
 	String userPass= "@Test12345678";
-	
 	HomePage homeOpj;
 	RegistrationPage registrationOpj;
 	LoginPage loginOpj;
 	@Test(priority = 1)
-public void registrationSuccss() {
+public void userRegistrationSuccss() {
 		
 	homeOpj= new HomePage(driver);
 	homeOpj.openRegistrationPage();
@@ -27,13 +26,13 @@ public void registrationSuccss() {
 	Assert.assertTrue(registrationOpj.registrationSuccss.getText().contains("registration completed"));
 }
 	@Test(priority = 2)
-	public void logoutSuccss() {
+	public void userLogoutSuccss() {
 		
 		registrationOpj.userLogout();
 	}
 	
 	@Test(priority = 3)
-	public void loginSuccss() {
+	public void userLoginSuccss() {
 		
 		homeOpj.openLoginpage();
 		loginOpj=new LoginPage(driver);

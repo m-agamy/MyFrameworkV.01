@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27312" started-at="2020-07-13T22:11:00 EET" finished-at="2020-07-13T22:11:28 EET">
+  <suite name="Default suite" duration-ms="18969" started-at="2020-07-25T00:18:01 EET" finished-at="2020-07-25T00:18:20 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27312" started-at="2020-07-13T22:11:00 EET" finished-at="2020-07-13T22:11:28 EET">
-      <class name="tests.ChangePasswordTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ChangePasswordTest@11438d26]" name="startDriver" is-config="true" duration-ms="22569" started-at="2020-07-13T22:10:38 EET" finished-at="2020-07-13T22:11:00 EET">
+    <test name="Default test" duration-ms="18969" started-at="2020-07-25T00:18:01 EET" finished-at="2020-07-25T00:18:20 EET">
+      <class name="tests.EmailProductToFriendTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.EmailProductToFriendTest@11438d26]" name="startDriver" is-config="true" duration-ms="21613" started-at="2020-07-25T00:17:39 EET" finished-at="2020-07-25T00:18:01 EET">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="registrationSuccss()[pri:1, instance:tests.ChangePasswordTest@11438d26]" name="registrationSuccss" duration-ms="12529" started-at="2020-07-13T22:11:01 EET" finished-at="2020-07-13T22:11:13 EET">
+        <test-method status="PASS" signature="UserRegistrationSuccss()[pri:1, instance:tests.EmailProductToFriendTest@11438d26]" name="UserRegistrationSuccss" duration-ms="7450" started-at="2020-07-25T00:18:01 EET" finished-at="2020-07-25T00:18:08 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrationSuccss -->
-        <test-method status="PASS" signature="changePasswordSuccss()[pri:2, instance:tests.ChangePasswordTest@11438d26]" name="changePasswordSuccss" duration-ms="6366" started-at="2020-07-13T22:11:13 EET" finished-at="2020-07-13T22:11:19 EET">
+        </test-method> <!-- UserRegistrationSuccss -->
+        <test-method status="PASS" signature="userSearchByAutoSuggest()[pri:2, instance:tests.EmailProductToFriendTest@11438d26]" name="userSearchByAutoSuggest" duration-ms="7673" started-at="2020-07-25T00:18:08 EET" finished-at="2020-07-25T00:18:16 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changePasswordSuccss -->
-        <test-method status="PASS" signature="logoutSuccss()[pri:3, instance:tests.ChangePasswordTest@11438d26]" name="logoutSuccss" duration-ms="4336" started-at="2020-07-13T22:11:19 EET" finished-at="2020-07-13T22:11:24 EET">
+        </test-method> <!-- userSearchByAutoSuggest -->
+        <test-method status="PASS" signature="userEmailAproductToFriend()[pri:3, instance:tests.EmailProductToFriendTest@11438d26]" name="userEmailAproductToFriend" duration-ms="3735" started-at="2020-07-25T00:18:16 EET" finished-at="2020-07-25T00:18:20 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutSuccss -->
-        <test-method status="PASS" signature="loginSuccss()[pri:4, instance:tests.ChangePasswordTest@11438d26]" name="loginSuccss" duration-ms="3900" started-at="2020-07-13T22:11:24 EET" finished-at="2020-07-13T22:11:28 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccss -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ChangePasswordTest@11438d26]" name="stopDriver" is-config="true" duration-ms="1256" started-at="2020-07-13T22:11:28 EET" finished-at="2020-07-13T22:11:29 EET">
+        </test-method> <!-- userEmailAproductToFriend -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.EmailProductToFriendTest@11438d26]" name="stopDriver" is-config="true" duration-ms="2975" started-at="2020-07-25T00:18:20 EET" finished-at="2020-07-25T00:18:23 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.ChangePasswordTest -->
+      </class> <!-- tests.EmailProductToFriendTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

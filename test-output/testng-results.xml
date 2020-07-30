@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18969" started-at="2020-07-25T00:18:01 EET" finished-at="2020-07-25T00:18:20 EET">
+  <suite name="Default suite" duration-ms="27697" started-at="2020-07-30T02:32:19 EET" finished-at="2020-07-30T02:32:47 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18969" started-at="2020-07-25T00:18:01 EET" finished-at="2020-07-25T00:18:20 EET">
-      <class name="tests.EmailProductToFriendTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.EmailProductToFriendTest@11438d26]" name="startDriver" is-config="true" duration-ms="21613" started-at="2020-07-25T00:17:39 EET" finished-at="2020-07-25T00:18:01 EET">
+    <test name="Default test" duration-ms="27697" started-at="2020-07-30T02:32:19 EET" finished-at="2020-07-30T02:32:47 EET">
+      <class name="tests.CompareListAddAndRemoveTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.CompareListAddAndRemoveTest@11438d26]" name="startDriver" is-config="true" duration-ms="19211" started-at="2020-07-30T02:32:00 EET" finished-at="2020-07-30T02:32:19 EET">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="UserRegistrationSuccss()[pri:1, instance:tests.EmailProductToFriendTest@11438d26]" name="UserRegistrationSuccss" duration-ms="7450" started-at="2020-07-25T00:18:01 EET" finished-at="2020-07-25T00:18:08 EET">
+        <test-method status="PASS" signature="userAddProductsToCompareList()[pri:1, instance:tests.CompareListAddAndRemoveTest@11438d26]" name="userAddProductsToCompareList" duration-ms="17975" started-at="2020-07-30T02:32:19 EET" finished-at="2020-07-30T02:32:37 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserRegistrationSuccss -->
-        <test-method status="PASS" signature="userSearchByAutoSuggest()[pri:2, instance:tests.EmailProductToFriendTest@11438d26]" name="userSearchByAutoSuggest" duration-ms="7673" started-at="2020-07-25T00:18:08 EET" finished-at="2020-07-25T00:18:16 EET">
+        </test-method> <!-- userAddProductsToCompareList -->
+        <test-method status="PASS" signature="userRemoveProductsFromeCompareList()[pri:2, instance:tests.CompareListAddAndRemoveTest@11438d26]" name="userRemoveProductsFromeCompareList" duration-ms="9509" started-at="2020-07-30T02:32:38 EET" finished-at="2020-07-30T02:32:47 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userSearchByAutoSuggest -->
-        <test-method status="PASS" signature="userEmailAproductToFriend()[pri:3, instance:tests.EmailProductToFriendTest@11438d26]" name="userEmailAproductToFriend" duration-ms="3735" started-at="2020-07-25T00:18:16 EET" finished-at="2020-07-25T00:18:20 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userEmailAproductToFriend -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.EmailProductToFriendTest@11438d26]" name="stopDriver" is-config="true" duration-ms="2975" started-at="2020-07-25T00:18:20 EET" finished-at="2020-07-25T00:18:23 EET">
+        </test-method> <!-- userRemoveProductsFromeCompareList -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.CompareListAddAndRemoveTest@11438d26]" name="stopDriver" is-config="true" duration-ms="1" started-at="2020-07-30T02:32:48 EET" finished-at="2020-07-30T02:32:48 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.EmailProductToFriendTest -->
+      </class> <!-- tests.CompareListAddAndRemoveTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

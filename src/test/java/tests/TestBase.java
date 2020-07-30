@@ -24,10 +24,11 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-
+		
+		//driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://demo.nopcommerce.com/");
-		driver.manage().timeouts().implicitlyWait(120,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 	}
 
 	@AfterSuite

@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -9,10 +10,9 @@ public class HomePage extends PageBase {
 
 	public HomePage(WebDriver driver) {
 		super(driver);
+		action= new Actions(driver);
 	}
 	
-	Select currencyList;
-
 	@FindBy(css = "a.ico-register")
 	WebElement createAnAccount;
 	
@@ -27,6 +27,12 @@ public class HomePage extends PageBase {
 	
 	@FindBy(id = "customerCurrency")
 	WebElement CurrencyDropList;
+	
+	@FindBy(linkText = "Electronics")
+	WebElement electronicsMenuLink;
+	
+	@FindBy(linkText = "Cell phones")
+	WebElement cellPhonesMenuLink;
 	
 	public void openRegistrationPage() {
 		clickBtn(createAnAccount);
@@ -47,7 +53,12 @@ public class HomePage extends PageBase {
 	
 	public void currencyChainge(String currencyValue) {
 		
-		currencyList= new Select(CurrencyDropList);
-		currencyList.selectByVisibleText(currencyValue);
+		select= new Select(CurrencyDropList);
+		select.selectByVisibleText(currencyValue);
+	}
+	
+	public void selectCellPhonesHoverMenu() {
+		
+		action.moveToElement(electronicsMenuLink).moveToElement(cellPhonesMenuLink).click().build().perform();
 	}
 }

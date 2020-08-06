@@ -8,7 +8,7 @@ import pages.LoginPage;
 import pages.RegistrationPage;
 
 public class UserRegistrationAndLoginTest extends TestBase {
-	
+
 	String firstName= "agamy";
 	String lastName= "Test11";
 	String userMail= "anaagamy1333@yahoo.com";
@@ -17,26 +17,27 @@ public class UserRegistrationAndLoginTest extends TestBase {
 	RegistrationPage registrationOpj;
 	LoginPage loginOpj;
 	@Test(priority = 1)
-public void userRegistrationSuccss() {
-		
-	homeOpj= new HomePage(driver);
-	homeOpj.openRegistrationPage();
-	registrationOpj= new RegistrationPage(driver);
-	registrationOpj.userRegistration(firstName,lastName , userMail, userPass);
-	Assert.assertTrue(registrationOpj.registrationSuccss.getText().contains("registration completed"));
-}
+	public void userRegistrationSuccss() {
+
+		homeOpj= new HomePage(driver);
+		homeOpj.openRegistrationPage();
+		registrationOpj= new RegistrationPage(driver);
+		registrationOpj.userRegistration(firstName,lastName , userMail, userPass);
+		Assert.assertTrue(registrationOpj.registrationSuccss.getText().contains("registration completed"));
+	}
 	@Test(priority = 2)
 	public void userLogoutSuccss() {
-		
+
 		registrationOpj.userLogout();
 	}
-	
+
 	@Test(priority = 3)
 	public void userLoginSuccss() {
-		
+
 		homeOpj.openLoginpage();
 		loginOpj=new LoginPage(driver);
 		loginOpj.userLogin(userMail, userPass);
 		Assert.assertTrue(registrationOpj.LogoutLink.getText().contains("Log out"));
+		registrationOpj.userLogout();
 	}
 }

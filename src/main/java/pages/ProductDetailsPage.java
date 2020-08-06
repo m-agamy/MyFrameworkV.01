@@ -37,6 +37,12 @@ public class ProductDetailsPage extends PageBase {
 	@FindBy(linkText = "Compare products list")
 	WebElement compareListLink;
 
+	@FindBy(css = "input.button-1.add-to-cart-button")
+	WebElement addToShoppingCartBtn;
+	
+	@FindBy(id = "topcartlink")
+	WebElement shoppingCartLink;
+
 	public void openEmailAfriendPage() {
 
 		clickBtn(emailAfriendBtn);
@@ -77,4 +83,14 @@ public class ProductDetailsPage extends PageBase {
 
 		clickBtn(compareListLink);
 	}
+
+	public void addProductToShoppingCart () {
+		clickBtn(addToShoppingCartBtn);
+	}
+	
+	public void openShoppingCart() {
+
+		clickBtn(shoppingCartLink);
+	}
+
 }

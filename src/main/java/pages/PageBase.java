@@ -16,12 +16,18 @@ public class PageBase {
 		PageFactory.initElements(driver, this);
 	}
 	protected static void clickBtn (WebElement btnElement) {
-	
+
 		btnElement.click();
 	}
-	
+
 	protected static void setText (WebElement txtBox , String text ) {
-		
+
 		txtBox.sendKeys(text);
 	}
+
+	protected static void clearText (WebElement txtBox) {
+
+		txtBox.clear();
+	}
+
 }

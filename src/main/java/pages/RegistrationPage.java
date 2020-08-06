@@ -32,10 +32,12 @@ public class RegistrationPage extends PageBase {
 
 	@FindBy(css = "div.result")
 	public WebElement registrationSuccss;
-	
+
 	@FindBy(linkText = "Log out")
 	public WebElement LogoutLink;
 
+	@FindBy(name = "register-continue")
+	WebElement continueBtn;
 
 	public void userRegistration(String firstName ,String lastName ,String customerEmail, String customerPassword ) {
 
@@ -50,5 +52,9 @@ public class RegistrationPage extends PageBase {
 	}
 	public void userLogout() {
 		clickBtn(LogoutLink);
+	}
+
+	public void continueAfterRegistration() {
+		clickBtn(continueBtn);
 	}
 }

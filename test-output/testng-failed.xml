@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CompareListAddAndRemoveTest">
+      <class name="tests.GuestUserCheckoutTest">
         <methods>
           <include name="startDriver"/>
+          <include name="gestUserCanChechoutProduct"/>
           <include name="stopDriver"/>
-          <include name="userRemoveProductsFromeCompareList"/>
         </methods>
-      </class> <!-- tests.CompareListAddAndRemoveTest -->
+      </class> <!-- tests.GuestUserCheckoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

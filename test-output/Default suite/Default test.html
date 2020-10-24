@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 06 17:50:23 EET 2020</td>
+<td>Started on:</td><td>Sat Oct 24 07:34:48 EET 2020</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22798 ms)</td>
+<tr><td>Total time:</td><td>18 seconds (18266 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,28 +67,47 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.UserRegistrationAndLoginTest.userLoginSuccss()'><b>userLoginSuccss</b><br>Test class: tests.UserRegistrationAndLoginTest</td>
-<td></td>
-<td>11</td>
-<td>tests.UserRegistrationAndLoginTest@11438d26</td></tr>
-<tr>
-<td title='tests.UserRegistrationAndLoginTest.userLogoutSuccss()'><b>userLogoutSuccss</b><br>Test class: tests.UserRegistrationAndLoginTest</td>
-<td></td>
-<td>3</td>
-<td>tests.UserRegistrationAndLoginTest@11438d26</td></tr>
-<tr>
-<td title='tests.UserRegistrationAndLoginTest.userRegistrationSuccss()'><b>userRegistrationSuccss</b><br>Test class: tests.UserRegistrationAndLoginTest</td>
-<td></td>
-<td>8</td>
-<td>tests.UserRegistrationAndLoginTest@11438d26</td></tr>
+<td title='runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registration with valid credentials", "Optional[User Registration]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using css selector=div.result
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-Q50PKRU&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:336)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:494)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.getText(Unknown Source)
+	at steps.UserRegistrationBdd.user_registration_completed(UserRegistrationBdd.java:49)
+	at ?.User registration completed(file:///D:/QC/selunim%20work/Taf/src/test/java/features/UserRegistration.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace199150625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199150625'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using css selector=div.result
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-Q50PKRU&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:336)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:494)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.getText(Unknown Source)
+	at steps.UserRegistrationBdd.user_registration_completed(UserRegistrationBdd.java:49)
+	at ?.User registration completed(file:///D:/QC/selunim%20work/Taf/src/test/java/features/UserRegistration.feature:10)
+</pre></div></td>
+<td>14</td>
+<td>runner.FeatureRunner@7b69c6ba</td></tr>
 </table><p>
 </body>
 </html>

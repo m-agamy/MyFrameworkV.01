@@ -2,7 +2,6 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pages.HomePage;
 import pages.LoginPage;
 import pages.RegistrationPage;
@@ -12,10 +11,11 @@ public class UserRegistrationAndLoginTest extends TestBase {
 	String firstName= "agamy";
 	String lastName= "Test11";
 	String userMail= "anaagamy1333@yahoo.com";
-	String userPass= "@Test12345678";
+	String userPass= "Test12345678";
 	HomePage homeOpj;
 	RegistrationPage registrationOpj;
 	LoginPage loginOpj;
+	
 	@Test(priority = 1)
 	public void userRegistrationSuccss() {
 

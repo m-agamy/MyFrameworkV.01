@@ -9,7 +9,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class TestBase {
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+
+public class TestBase extends AbstractTestNGCucumberTests{
 	public static WebDriver driver;
 	@BeforeSuite
 	@Parameters ({"browser"})
@@ -27,7 +29,7 @@ public class TestBase {
 		
 		//driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://demo.nopcommerce.com/");
+		driver.navigate().to("https://demo.nopcommerce.com");
 		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 	}
 

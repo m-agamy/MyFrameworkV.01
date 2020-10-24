@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22798" started-at="2020-08-06T17:50:23 EET" finished-at="2020-08-06T17:50:46 EET">
+  <suite name="Default suite" duration-ms="18266" started-at="2020-10-24T07:34:48 EET" finished-at="2020-10-24T07:35:06 EET">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.FeatureRunner@7b69c6ba]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="22798" started-at="2020-08-06T17:50:23 EET" finished-at="2020-08-06T17:50:46 EET">
-      <class name="tests.UserRegistrationAndLoginTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationAndLoginTest@11438d26]" name="startDriver" is-config="true" duration-ms="24160" started-at="2020-08-06T17:49:59 EET" finished-at="2020-08-06T17:50:23 EET">
+    <test name="Default test" duration-ms="18266" started-at="2020-10-24T07:34:48 EET" finished-at="2020-10-24T07:35:06 EET">
+      <class name="runner.FeatureRunner">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:runner.FeatureRunner@7b69c6ba]" name="startDriver" is-config="true" duration-ms="14013" started-at="2020-10-24T07:34:33 EET" finished-at="2020-10-24T07:34:48 EET">
           <params>
             <param index="0">
               <value>
@@ -18,23 +21,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="userRegistrationSuccss()[pri:1, instance:tests.UserRegistrationAndLoginTest@11438d26]" name="userRegistrationSuccss" duration-ms="8258" started-at="2020-08-06T17:50:23 EET" finished-at="2020-08-06T17:50:32 EET">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.FeatureRunner@7b69c6ba]" name="setUpClass" is-config="true" duration-ms="2503" started-at="2020-10-24T07:34:48 EET" finished-at="2020-10-24T07:34:50 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userRegistrationSuccss -->
-        <test-method status="PASS" signature="userLogoutSuccss()[pri:2, instance:tests.UserRegistrationAndLoginTest@11438d26]" name="userLogoutSuccss" duration-ms="3341" started-at="2020-08-06T17:50:32 EET" finished-at="2020-08-06T17:50:35 EET">
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.FeatureRunner@7b69c6ba]" name="runScenario" duration-ms="14811" started-at="2020-10-24T07:34:50 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-24T07:35:05 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User registration with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Registration]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using css selector=div.result
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-Q50PKRU', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using css selector=div.result
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-Q50PKRU', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:336)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:494)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy27.getText(Unknown Source)
+at steps.UserRegistrationBdd.user_registration_completed(UserRegistrationBdd.java:49)
+at ✽.User registration completed(file:///D:/QC/selunim%20work/Taf/src/test/java/features/UserRegistration.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userLogoutSuccss -->
-        <test-method status="PASS" signature="userLoginSuccss()[pri:3, instance:tests.UserRegistrationAndLoginTest@11438d26]" name="userLoginSuccss" duration-ms="11106" started-at="2020-08-06T17:50:35 EET" finished-at="2020-08-06T17:50:46 EET">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.FeatureRunner@7b69c6ba]" name="tearDownClass" is-config="true" duration-ms="803" started-at="2020-10-24T07:35:05 EET" finished-at="2020-10-24T07:35:06 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userLoginSuccss -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.UserRegistrationAndLoginTest@11438d26]" name="stopDriver" is-config="true" duration-ms="1197" started-at="2020-08-06T17:50:46 EET" finished-at="2020-08-06T17:50:48 EET">
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.FeatureRunner@7b69c6ba]" name="stopDriver" is-config="true" duration-ms="771" started-at="2020-10-24T07:35:06 EET" finished-at="2020-10-24T07:35:07 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.UserRegistrationAndLoginTest -->
+      </class> <!-- runner.FeatureRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
